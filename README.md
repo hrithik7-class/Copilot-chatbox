@@ -1,5 +1,5 @@
 <h1>Link of the Wabsite</h1>
-<span>(https://copilot-chat-kappa.vercel.app/)</span>
+<span>https://copilot-chat-kappa.vercel.app/</span>
 
 <h3>Information</h3>
 
