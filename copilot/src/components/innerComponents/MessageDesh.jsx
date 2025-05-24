@@ -1,9 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Star, Phone, MoonStar, HardDriveDownload, Ellipsis, ScrollText, UserCircle2, ChevronDown, MessageSquareText, Zap, Bookmark, Smile } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 export const MessageDesh = () => {
     const chatContainerRef = useRef(null);
+    const [fill ,SetFill]=useState(false)
+    const [snoose ,SetSnoose]=useState(false)
     
       // Sample messages array
       const messages = [
@@ -50,6 +53,17 @@ export const MessageDesh = () => {
           });
         }
       }, [messages]);
+   
+
+      const click = () => {
+        SetFill(!fill)
+        
+  
+      }
+       const clicks = () => {
+        SetSnoose(!snoose)
+  
+      }
   return (
     <>
      <div className="   bg-white   border-purple-200">
@@ -58,20 +72,23 @@ export const MessageDesh = () => {
           <div className="md:text-md text-xs font-bold  md:ml-4 ml-1">NikolaTesla</div>
           <div className="flex items-center md:gap-2 md:pr-2 gap-1 pr-1 ">
             <div className="p-1 cursor-pointer size-xs">
-              <Star className="md:size-5  sixe-3" />
+              <Star onClick={click} className="md:size-5  sixe-3 transition-colors duration-200 "
+              fill={fill ? "#c4c6f6" : "none"} color={fill? '#c4c6f6': "#000000"} />
             </div>
             <div className="bg-[#d8d9f4] p-2 rounded-md cursor-pointer">
               <Ellipsis className="size-3" />
             </div>
             <div className="bg-[#d8d9f4] p-2 rounded-md cursor-pointer text-xs">
-              <ScrollText className="size-3" />
+             <Link to='/overview'> <ScrollText className="size-3" /> </Link> 
             </div>
             <div className="flex justify-center items-center bg-[#d8d9f4] p-2 rounded-md gap-1 cursor-pointer">
               <Phone className="size-3" />
               <span className="font-semibold text-xs">call</span>
             </div>
-            <div className="bg-[#d8d9f4] p-2 rounded-md flex justify-center items-center gap-1 cursor-pointer">
-              <MoonStar className="size-3" />
+            <div onClick={clicks} className={`bg-[#d8d9f4] p-2 rounded-md flex justify-center items-center gap-1 cursor-pointer
+               ${snoose ? 'bg-black && text-[#c4c6f6]'  : 'bg-[#d8d9f4] && text-black'} transition-colors  duration-300 `}>
+              <MoonStar onClick={clicks} className="size-3  "
+               fill={snoose ? "#c4c6f6" : "none"} color={snoose? '#c4c6f6': "#000000"}/>
               <span className="font-semibold text-xs">Snooze</span>
             </div>
             <div className="text-[#d8d9f4] p-2 rounded-md bg-black flex justify-center items-center gap-1 cursor-pointer">
