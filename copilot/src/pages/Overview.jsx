@@ -8,8 +8,8 @@ import { OverviewPreviewAnswer } from '../components/innerComponents/OverviewPre
 export const Overview = () => {
     return (
         <div className='min-h-screen bg-[#c4c6f6]
-             flex items-center justify-center md:p-4 p-2'>
-            <div className='mx-auto    rounded-md  lg:max-w-7xl md:max-w-4xl max-w-full  bg-white  min-h-screen fixed '>
+             flex items-center justify-center '>
+            <div className='mx-auto    rounded-md  lg:max-w-7xl md:max-w-4xl max-w-full  bg-white  min-h-screen '>
                 {/* navbar */} 
                 <div className='flex-col justify-start items-center border-b md:p-3 p-1 border-gray-300 min-h-full'>
 
