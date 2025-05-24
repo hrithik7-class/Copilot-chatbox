@@ -9,7 +9,7 @@ export const Overview = () => {
     return (
         <div className='min-h-screen bg-[#c4c6f6]
              flex items-center justify-center '>
-            <div className='mx-auto    rounded-md  lg:max-w-7xl md:max-w-4xl max-w-full  bg-white  min-h-screen '>
+            <div className='mx-auto    sm:rounded-sm  lg:max-w-7xl md:max-w-4xl max-w-full  bg-white  min-h-screen '>
                 {/* navbar */} 
                 <div className='flex-col justify-start items-center border-b md:p-3 p-1 border-gray-300 min-h-full'>
 
