@@ -12,9 +12,13 @@ const toggleTab=(toggleTab)=>{
   setShow(toggleTab);
 }
 
+
+
+//max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 h-20
+
   return (
-    <div className="min-h-screen  bg-[#c4c6f6]   flex items-center mx-auto justify-center "> 
-      <div className='bg-white w-[1280px] mx-auto flex pt-3 pl-2 rounded-r-md rounded-l '>
+    <div className=" relative bg-white  "> 
+      <div className=' flex  '>
 
         {/* Left Section (25%) - Inbox Sidebar */}
         <div className='lg:w-[25%] md:w-[35%] hidden sm:block  min-h-full ' >
@@ -22,7 +26,7 @@ const toggleTab=(toggleTab)=>{
         </div>
 
          {/* Middle Section (45%) - Chat Area */}
-        <div className='lg:w-[45%] sm:w-[65%]  w-[100%]  min-h-full'>
+        <div className='lg:w-[45%] sm:w-[65%]  w-full  min-h-full'>
           <MessageDesh/>
         </div>
         

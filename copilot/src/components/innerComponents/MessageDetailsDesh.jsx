@@ -29,6 +29,15 @@ export const MessageDetailsDesh = () => {
     },
     {
       id: 3,
+      sender: 'Ivan • Nike',
+      message: 'Hi there, I have a q...',
+      time: '30m',
+      icon: 'I',
+      iconColor: 'bg-red-500',
+      isIconImage: false,
+    },
+    {
+      id: 4,
       sender: 'Lead from New York',
       message: 'Good morning, let me...',
       time: '40m',
@@ -37,7 +46,7 @@ export const MessageDetailsDesh = () => {
       isIconImage: false,
     },
     {
-      id: 4,
+      id: 5,
       sender: 'Booking API problems',
       message: 'Luis • Small Crafts',
       time: '45m',
@@ -46,7 +55,16 @@ export const MessageDetailsDesh = () => {
       isIconImage: true,
     },
     {
-      id: 5,
+      id: 6,
+      sender: 'MIRACLE • Exemplary Bank',
+      message: "Hey there, I'm here to...",
+      time: '45m',
+      icon: 'star',
+      iconColor: 'bg-gray-300',
+      isIconImage: true,
+    },
+     {
+      id: 7,
       sender: 'MIRACLE • Exemplary Bank',
       message: "Hey there, I'm here to...",
       time: '45m',
@@ -74,13 +92,13 @@ export const MessageDetailsDesh = () => {
         {/* sort list  */}
           <div className="flex space-x-2 justify-between p-3">
           <button
-            className="flex items-center text-sm text-black font-bold px-2 py-1 rounded"
+            className="flex items-center  md:text-sm text-[10px] text-black font-bold px-2 py-1 rounded"
             onClick={() => handleSort('5 Open')}
           >
-            5 Open <ChevronDown className="ml-1 w-4 h-4" />
+            5 Open <ChevronDown className="ml-1 w-4 h-4 " />
           </button>
           <button
-            className="flex items-center text-sm text-black font-bold px-2 py-1 rounded"
+            className="flex items-center md:text-sm text-[10px] text-black font-bold px-2 py-1 rounded "
             onClick={() => handleSort('Waiting longest')}
           >
             Waiting longest <ChevronDown className="ml-1 w-4 h-4" />
@@ -119,15 +137,12 @@ export const MessageDetailsDesh = () => {
  
       </div> 
 
-      <div className=' fixed flex justify-center items-center mt-[132px] p-1 h-9 gap-3 w-24 ml-3  bg-gray-50 rounded-md  shadow-md'>
+      <div className='  flex justify-center items-center mt-[100px] p-1 h-9 gap-3 w-24 ml-3  bg-gray-50 rounded-md  shadow-md'>
         <div><List className='size-7  bg-gray-200 p-2 rounded-md cursor-pointer 
         '/></div>
         <div><LayoutList className='size-5 cursor-pointer
         ' /></div>
         </div>
-
-      
-      
         </div>
     
     
