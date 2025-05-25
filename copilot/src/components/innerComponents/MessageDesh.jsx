@@ -108,7 +108,7 @@ export const MessageDesh = () => {
 
 
         {/* Chat Section */}
-        <div ref={chatContainerRef} className="p-4 space-y-4 h-[480px] overflow-y-auto scroll-smooth scrollbar-hide relative">
+        <div ref={chatContainerRef} className="p-4 space-y-4 h-[503px] overflow-y-auto scroll-smooth scrollbar-hide relative">
           {messages.map((message, index) => (
             <div key={index} className={`flex ${message.type === 'user' ? 'justify-start' : 'justify-end'}`}>
               {message.type === 'user' && (

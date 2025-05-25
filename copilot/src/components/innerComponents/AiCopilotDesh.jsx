@@ -36,7 +36,7 @@ export const AiCopilotDesh = ({ toggleTab }) => {
         </div>
 
         <div className=' p-2 relative  '>
-          <p className='lg:text-sm sm:text-[11px] text-[9px] mt-[59px] text-gray-500 p-2 bg-gray-100 rounded-md w-1/2 text-center 
+          <p className='lg:text-sm sm:text-[11px] text-[9px] mt-[74px] text-gray-500 p-2 bg-gray-100 rounded-md w-1/2 text-center 
             font-medium mb-14'><span className='font-semibold text-black'>
               Suggested </span> 💸 How do I get a refund?</p>
           <div className='flex items-center justify-center'>

@@ -137,7 +137,7 @@ export const MessageDetailsDesh = () => {
  
       </div> 
 
-      <div className='  flex justify-center items-center mt-[100px] p-1 h-9 gap-3 w-24 ml-3  bg-gray-50 rounded-md  shadow-md'>
+      <div className='  flex justify-center items-center mt-[95px] p-1 h-9 gap-3 w-24 ml-3  bg-gray-50 rounded-md  shadow-md'>
         <div><List className='size-7  bg-gray-200 p-2 rounded-md cursor-pointer 
         '/></div>
         <div><LayoutList className='size-5 cursor-pointer
