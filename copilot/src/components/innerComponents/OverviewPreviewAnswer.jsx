@@ -15,7 +15,7 @@ export const OverviewPreviewAnswer = () => {
             </div>
             {/* Appointment Card */}
 
-            <div className='flex flex-col gap-3  bg-gradient-to-b to-[#e0b6c5] via-[#edde99] from-[#b7b7db]  md:h-[500px] rounded-t-md  p-2 '>
+            <div className='flex flex-col gap-3  bg-gradient-to-b to-[#e0b6c5] via-[#edde99] from-[#b7b7db]  md:h-[520px] rounded-t-md  p-2 '>
                 <ChartNoAxesGantt className='size-7 bg-gray-200 rounded-md p-1 cursor-pointer' />
                 <div className="bg-white w-2/3 md:w-full p-4 rounded-lg shadow-md mt-8">
                     <div className="flex justify-between items-center mb-2">
