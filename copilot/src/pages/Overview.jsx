@@ -39,7 +39,7 @@ export const Overview = () => {
                 </div>
 
 
-                <div className='md:flex   pt-20'>
+                <div className='md:flex   pt-24'>
                     <div className='p-3 lg:w-2/3 md:w-1/2 max-w-full  '>
                         <div className="mb-5">
                             <h2 className="text-md font-bold ">Fin's tone</h2>
